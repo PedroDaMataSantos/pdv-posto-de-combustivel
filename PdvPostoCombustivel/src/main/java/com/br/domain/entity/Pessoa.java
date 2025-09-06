@@ -57,6 +57,7 @@ public class Pessoa {
     public void setCpf(Integer cpf) {
         this.numeroCtps = numeroCtps;
     }
+    //fim
 
 }
 
