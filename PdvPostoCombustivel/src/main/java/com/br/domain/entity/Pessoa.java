@@ -1,5 +1,6 @@
 package com.br.domain.entity;
 
+// imports
 import java.util.Date;
 
 public class Pessoa {
