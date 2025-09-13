@@ -11,12 +11,12 @@ public class Pessoa {
 
     private Date dataNascimento;
 
-    private Integer numeroCtps;
+    private int numeroCtps;
 
     private Double salario;
 
     //construtor
-    public Pessoa(String nomeCompleto, String cpfCnpj, Date dataNascimento, Integer numeroCtps,Double salario) {
+    public Pessoa(String nomeCompleto, String cpfCnpj, Date dataNascimento, int numeroCtps,Double salario) {
         this.nomeCompleto = nomeCompleto;
         this.cpfCnpj = cpfCnpj;
         this.dataNascimento = dataNascimento;
@@ -24,6 +24,11 @@ public class Pessoa {
         this.salario = salario;
 
 
+    }
+
+    //classe
+
+    public Pessoa() {
     }
 
     //getters
@@ -40,7 +45,7 @@ public class Pessoa {
         return cpfCnpj;
     }
 
-    public Integer getNumeroCtps() {
+    public int getNumeroCtps() {
         return numeroCtps;
     }
 
@@ -62,7 +67,7 @@ public class Pessoa {
         this.cpfCnpj = cpfCnpj;
     }
 
-    public void setCpf(Integer numeroCtps) {
+    public void setNumeroCtps(int numeroCtps) {
         this.numeroCtps = numeroCtps;
     }
 
