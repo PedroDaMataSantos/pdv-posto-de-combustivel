@@ -26,13 +26,13 @@ public class Estoque {
 
     //metodos
 
-    public void abastecer(BigDecimal quantidade) {
+    public void Abastecer(BigDecimal quantidade) {
         
         this.quantidade=this.quantidade.add(quantidade);
         System.out.println("Foi abastecido "+ quantidade+"L. Quantidade atual em estoque " + this.quantidade+"L");
         
     }
-    public void desabastecer(BigDecimal quantidade) {
+    public void Desabastecer(BigDecimal quantidade) {
 
         this.quantidade=this.quantidade.subtract(quantidade);
            System.out.println("Foi desabastecido "+ quantidade+"L. Quantidade atual em estoque " + this.quantidade+"L");
