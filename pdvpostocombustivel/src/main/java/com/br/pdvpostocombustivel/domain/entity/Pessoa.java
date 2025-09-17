@@ -1,27 +1,42 @@
 package com.br.pdvpostocombustivel.domain.entity;
 // imports
-import java.util.Date;
+import jakarta.persistence.*;
+import jakarta.websocket.OnMessage;
+import java.time.LocalDate;
+
+// anotations
+@Entity
+@Table(name="pessoa")
 
 public class Pessoa {
 
     // atributos
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+    private long id;
+
+    
+    @Column(length = 200,nullable = false)
     private String nomeCompleto;
 
+    @Column(length = 14,nullable = false)
     private String cpfCnpj;
 
-    private Date dataNascimento;
+    @Column(length=8,nullable = false)
+    private LocalDate dataNascimento;
 
+
+    @Column(length = 14)
     private int numeroCtps;
 
-    private Double salario;
-
     //construtor
-    public Pessoa(String nomeCompleto, String cpfCnpj, Date dataNascimento, int numeroCtps,Double salario) {
+    public Pessoa(String nomeCompleto, String cpfCnpj, LocalDate dataNascimento, int numeroCtps,Double salario) {
         this.nomeCompleto = nomeCompleto;
         this.cpfCnpj = cpfCnpj;
         this.dataNascimento = dataNascimento;
         this.numeroCtps = numeroCtps;
-        this.salario = salario;
+       
 
 
     }
@@ -31,12 +46,18 @@ public class Pessoa {
     public Pessoa() {
     }
 
+    
+
     //getters
+
+    public long getId() {
+        return id;
+    }
     public String getNomeCompleto() {
         return nomeCompleto;
     }
 
-    public Date getDataNascimento() {
+    public LocalDate getDataNascimento() {
         return dataNascimento;
 
     }
@@ -49,9 +70,8 @@ public class Pessoa {
         return numeroCtps;
     }
 
-    public Double getSalario() {
-        return salario;
-    }
+  
+
 
     //setter
 
@@ -59,7 +79,7 @@ public class Pessoa {
         this.nomeCompleto = nomeCompleto;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
@@ -71,9 +91,6 @@ public class Pessoa {
         this.numeroCtps = numeroCtps;
     }
 
-     public void salario(Double salario) {
-        this.salario = salario;
-    }
     //fim
 
 }
