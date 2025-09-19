@@ -1,0 +1,11 @@
+package com.br.pdvpostocombustivel.domain.repository;
+import com.br.pdvpostocombustivel.domain.entity.Custo;
+import java.util.Date;
+
+import java.util.Optional;
+
+public interface CustoRepository {
+
+    Optional<Custo>findByDataProcessamento(Date dataProcessamento);
+    Optional<Custo>findByMargemLucro(Double margemLucro);
+}
