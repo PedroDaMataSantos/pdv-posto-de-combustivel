@@ -13,7 +13,6 @@ public class Acesso {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Long id;
 
     //atributos

@@ -17,6 +17,7 @@ public class Estoque {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     // atributos
 
     private BigDecimal quantidade;

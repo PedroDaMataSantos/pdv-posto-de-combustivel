@@ -16,7 +16,6 @@ import java.util.Date;
 public class Preco {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    
     private Long id;
 
     @Column(precision = 7,nullable = false)

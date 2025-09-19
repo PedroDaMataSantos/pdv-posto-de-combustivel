@@ -7,5 +7,7 @@ import java.util.Optional;
 public interface CustoRepository {
 
     Optional<Custo>findByDataProcessamento(Date dataProcessamento);
-    Optional<Custo>findByMargemLucro(Double margemLucro);
+
+    boolean existsByDataProcessamento(Date dataProcessamento);
+    
 }

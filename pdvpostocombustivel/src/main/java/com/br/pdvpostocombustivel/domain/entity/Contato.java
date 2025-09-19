@@ -10,6 +10,7 @@ public class Contato {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     
+    
     @Column(length = 15, nullable = false)
     private String telefone;
     @Column(length = 50, nullable = false)
