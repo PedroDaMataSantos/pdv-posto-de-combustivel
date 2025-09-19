@@ -3,9 +3,20 @@ package com.br.pdvpostocombustivel.domain.entity;
 //imports
 import java.math.BigDecimal;
 
+import jakarta.annotation.Generated;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="estoque")
 
 public class Estoque {
-    
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     // atributos
 
     private BigDecimal quantidade;

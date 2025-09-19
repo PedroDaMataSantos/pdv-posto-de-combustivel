@@ -1,9 +1,23 @@
 package com.br.pdvpostocombustivel.domain.entity;
+
+
+import jakarta.persistence.Column;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
 public class Produto {
+    //atributos
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     
+    @Column(length = 100,nullable = false)
     private String nome;
+    @Column(length = 100,nullable = false)
     private String fornecedor;
+    @Column(length = 50,nullable = false)
     private String categoria;
+    @Column(length = 100,nullable = false)
     private String marca;
 
     //construtor

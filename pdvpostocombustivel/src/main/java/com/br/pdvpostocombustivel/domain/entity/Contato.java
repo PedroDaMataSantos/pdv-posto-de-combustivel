@@ -1,9 +1,20 @@
 package com.br.pdvpostocombustivel.domain.entity;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
 public class Contato {
     //atributos
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    
+    @Column(length = 15, nullable = false)
     private String telefone;
+    @Column(length = 50, nullable = false)
     private String email;
+    @Column(length = 100, nullable = false)
     private String endereco;
 
     //construtor
