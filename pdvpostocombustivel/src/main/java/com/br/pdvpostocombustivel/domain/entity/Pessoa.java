@@ -1,7 +1,6 @@
 package com.br.pdvpostocombustivel.domain.entity;
 // imports
 import jakarta.persistence.*;
-import jakarta.websocket.OnMessage;
 import java.time.LocalDate;
 
 // anotations

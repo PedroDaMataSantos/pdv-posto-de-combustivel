@@ -3,7 +3,6 @@ package com.br.pdvpostocombustivel.domain.entity;
 //imports
 import java.math.BigDecimal;
 
-import jakarta.annotation.Generated;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
