@@ -30,7 +30,7 @@ public class Pessoa {
     private int numeroCtps;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "tipo_pessoa",nullable = false,length = 20)
+    @Column(name = "tipo_pessoa",nullable = false,length = 14)
     private TipoPessoa tipoPessoa;
 
 
