@@ -19,6 +19,7 @@ public class Acesso {
 
     @Column(length = 50,nullable = false)
     private String usuario;
+    
     @Column(length = 10,nullable = false)
     private String senha;
 

@@ -22,12 +22,16 @@ public class Estoque {
 
     @Column(precision = 12,nullable = false)
     private BigDecimal quantidade;
+
     @Column(length = 50,nullable = false)
     private String localTanque;
+
     @Column(length = 50,nullable = false)
     private String localEndereco;
+
     @Column(length = 50,nullable = false)
     private String loteFabrica;
+    
     @Column(length = 10,nullable = false)
     private String dataValidade;
 

@@ -45,7 +45,6 @@ public class Pessoa {
 
     }
 
-    //classe
 
     public Pessoa() {
     }

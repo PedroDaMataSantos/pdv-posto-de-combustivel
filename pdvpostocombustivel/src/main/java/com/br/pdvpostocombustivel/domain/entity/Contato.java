@@ -13,8 +13,10 @@ public class Contato {
 
     @Column(length = 15, nullable = false)
     private String telefone;
+
     @Column(length = 50, nullable = false)
     private String email;
+    
     @Column(length = 100, nullable = false)
     private String endereco;
 
