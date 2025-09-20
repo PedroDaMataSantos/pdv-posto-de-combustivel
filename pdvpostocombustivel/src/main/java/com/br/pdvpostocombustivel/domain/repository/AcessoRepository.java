@@ -4,9 +4,10 @@ import com.br.pdvpostocombustivel.domain.entity.Acesso;
 
 public interface AcessoRepository {
 
-    Optional<Acesso> findByName(String usuario);
+    Optional<Acesso> findByUsuario(String usuario);
 
-    boolean existsByName(String usuario);
+    boolean existsByUsuario(String usuario);
     
    
 }
+

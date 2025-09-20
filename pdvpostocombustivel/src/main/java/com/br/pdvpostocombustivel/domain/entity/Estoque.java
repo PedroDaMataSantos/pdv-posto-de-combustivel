@@ -4,6 +4,7 @@ package com.br.pdvpostocombustivel.domain.entity;
 import java.math.BigDecimal;
 
 import jakarta.annotation.Generated;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -20,10 +21,15 @@ public class Estoque {
     private Long id;
     // atributos
 
+    @Column(precision = 12,nullable = false)
     private BigDecimal quantidade;
+    @Column(length = 50,nullable = false)
     private String localTanque;
+    @Column(length = 50,nullable = false)
     private String localEndereco;
+    @Column(length = 50,nullable = false)
     private String loteFabrica;
+    @Column(length = 10,nullable = false)
     private String dataValidade;
 
     //construtor
